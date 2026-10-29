@@ -6,9 +6,9 @@ function Contact() {
 
   return (
     <section id="contact" className="scroll-mt-20 pb-16">
-      <div className="rounded-2xl bg-dark px-6 py-12 text-center text-white">
+      <div className="rounded-2xl border border-line bg-card px-6 py-12 text-center text-white">
         <h2 className="text-2xl font-extrabold tracking-tight">
-          Let's build something<span className="text-tan">.</span>
+          Let's build something<span className="text-muted">.</span>
         </h2>
         <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-white/70">
           I'm open to web and mobile developer roles. I'd love to hear from you.
@@ -16,7 +16,7 @@ function Contact() {
         <a
           href={href}
           {...external}
-          className="mt-6 inline-block rounded-full bg-mauve px-6 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+          className="mt-6 inline-block rounded-full bg-white px-6 py-2.5 text-sm font-bold text-page transition-opacity hover:opacity-90"
         >
           {profile.email ? "Say hello" : "Message me on LinkedIn"}
         </a>

@@ -9,10 +9,10 @@ function ProjectCard({ name, platform, description, tags, repo, demo, image }) {
         />
       )}
       <div className="flex items-center justify-between gap-3">
-        <h3 className="text-lg font-bold text-dark transition-colors group-hover:text-mauve">
+        <h3 className="text-lg font-bold text-white transition-colors group-hover:text-muted">
           {name}
         </h3>
-        <span className="rounded-md bg-white px-2 py-0.5 text-[11px] font-semibold text-muted">
+        <span className="rounded-md bg-white/10 px-2 py-0.5 text-[11px] font-semibold text-muted">
           {platform}
         </span>
       </div>
@@ -23,12 +23,12 @@ function ProjectCard({ name, platform, description, tags, repo, demo, image }) {
       {(repo || demo) && (
         <div className="mt-4 flex gap-5 border-t border-line pt-4 text-sm font-semibold">
           {demo && (
-            <a href={demo} target="_blank" rel="noreferrer" className="text-dark hover:text-mauve">
+            <a href={demo} target="_blank" rel="noreferrer" className="text-white hover:text-muted">
               Live demo →
             </a>
           )}
           {repo && (
-            <a href={repo} target="_blank" rel="noreferrer" className="text-dark hover:text-mauve">
+            <a href={repo} target="_blank" rel="noreferrer" className="text-white hover:text-muted">
               View code →
             </a>
           )}

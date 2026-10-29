@@ -2,13 +2,10 @@ import { profile } from "../data";
 
 function Header() {
   return (
-    <header className="sticky top-0 z-20 bg-dark text-white">
+    <header className="sticky top-0 z-20 border-b border-line bg-page/90 text-white backdrop-blur">
       <div className="mx-auto flex h-16 max-w-3xl items-center justify-between gap-4 px-5">
-        <a href="#top" className="flex items-center gap-3">
-          <span className="flex size-9 items-center justify-center rounded-lg bg-mauve text-sm font-extrabold text-white">
-            ZT
-          </span>
-          <span className="hidden font-semibold sm:inline">{profile.name}</span>
+        <a href="#top" className="font-semibold whitespace-nowrap">
+          {profile.name}
         </a>
         <nav className="flex gap-1 text-sm text-white/70">
           {[
@@ -19,7 +16,7 @@ function Header() {
             <a
               key={href}
               href={href}
-              className="rounded-full px-3 py-1.5 transition-colors hover:bg-white/10 hover:text-white"
+              className="rounded-full px-2 py-1.5 whitespace-nowrap transition-colors sm:px-3 hover:bg-white/10 hover:text-white"
             >
               {label}
             </a>

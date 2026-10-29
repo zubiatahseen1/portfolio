@@ -16,6 +16,7 @@ export const techStack = [
   { name: "React", icon: `${iconBase}/react-original.svg` },
   { name: "HTML", icon: `${iconBase}/html5-original.svg` },
   { name: "CSS", icon: `${iconBase}/css3-original.svg` },
+  { name: "Tailwind", icon: `${iconBase}/tailwindcss-original.svg` },
   { name: "Swift", icon: `${iconBase}/swift-original.svg` },
   { name: "Kotlin", icon: `${iconBase}/kotlin-original.svg` },
   { name: "Git", icon: `${iconBase}/git-original.svg` },

@@ -3,23 +3,16 @@
 @theme {
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
-  /* Palette */
-  --color-mist: #dddbd9;   /* light grey */
-  --color-stone: #b8b3af;  /* warm grey */
-  --color-mauve: #9c7978;  /* mauve */
-  --color-tan: #c5b099;    /* tan */
-  --color-dark: #14140d;   /* near-black */
-
-  /* Derived */
-  --color-page: #f3f2f0;
-  --color-card: #e8e6e3;
-  --color-line: #dddbd9;
-  --color-ink: #14140d;
-  --color-muted: #6e6965;
+  --color-page: #0c0f11;
+  --color-card: #14181b;
+  --color-line: #2a2f34;
+  --color-ink: #ffffff;
+  --color-muted: #a8adb2;
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -27,5 +20,5 @@ body {
 }
 
 ::selection {
-  @apply bg-mauve text-white;
+  @apply bg-white text-page;
 }
