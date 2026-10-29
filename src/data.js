@@ -45,10 +45,11 @@ export const projects = [
     id: "mood-swings",
     name: "Mood Swings",
     platform: "Web",
-    description: "Description coming soon.",
-    tags: ["JavaScript", "HTML", "CSS"],
-    repo: "",
-    demo: "",
+    description:
+      "Pick how you want to feel tonight and get 12 matching movies, with filters by runtime and one-click reroll.",
+    tags: ["JavaScript", "HTML", "CSS", "TMDB API"],
+    repo: "https://github.com/zubiatahseen1/mood-swings",
+    demo: "https://zubiatahseen1.github.io/mood-swings/",
     image: "",
   },
   {

@@ -45,13 +45,17 @@ function Hero() {
           </div>
         </div>
 
-        <div className="shrink-0 self-start rounded-full bg-gradient-to-br from-teal-300 via-cyan-400 to-indigo-500 p-[3px] sm:self-center">
+        <div className="relative shrink-0 self-start sm:self-center">
+          <div
+            className="absolute -inset-4 rounded-full bg-gradient-to-br from-teal-400/40 via-cyan-500/25 to-indigo-500/40 blur-2xl"
+            aria-hidden="true"
+          ></div>
           <img
             src={avatar}
             alt={profile.name}
             width="176"
             height="176"
-            className="size-32 rounded-full border-4 border-white object-cover sm:size-44"
+            className="relative size-32 rounded-full object-cover ring-1 ring-white/15 sm:size-44"
           />
         </div>
       </div>
