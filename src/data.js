@@ -38,16 +38,17 @@ export const experience = [
 ];
 
 // repo / demo: leave "" to hide that link.
+// image: path to a screenshot in /public (e.g. "/projects/vestiaire.png"), or "" for none.
 export const projects = [
   {
     id: "mood-swings",
     name: "Mood Swings",
     platform: "Web",
-    // TODO: replace with a one-sentence description of Mood Swings.
     description: "Description coming soon.",
     tags: ["JavaScript", "HTML", "CSS"],
     repo: "",
     demo: "",
+    image: "",
   },
   {
     id: "vestiaire",
@@ -58,6 +59,7 @@ export const projects = [
     tags: ["Swift", "SwiftUI", "SwiftData"],
     repo: "",
     demo: "",
+    image: "",
   },
   {
     id: "superpodcast",
@@ -68,5 +70,6 @@ export const projects = [
     tags: ["Kotlin", "Retrofit", "Glide", "RecyclerView"],
     repo: "https://github.com/zubiatahseen1/AndroidApp4",
     demo: "",
+    image: "",
   },
 ];

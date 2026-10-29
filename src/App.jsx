@@ -10,14 +10,16 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <Hero />
-        <TechStack />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
+      <div className="mx-auto max-w-3xl px-5 pt-6 pb-10">
+        <main>
+          <Hero />
+          <TechStack />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

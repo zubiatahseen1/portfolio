@@ -1,32 +1,25 @@
 import { profile } from "../data";
 
 function Contact() {
+  const href = profile.email ? `mailto:${profile.email}` : profile.linkedin;
+  const external = profile.email ? {} : { target: "_blank", rel: "noreferrer" };
+
   return (
-    <section id="contact" className="section container">
-      <div className="card contact-card">
-        <h2>Let's work together</h2>
-        <p>
-          I'm open to web and mobile developer roles. The quickest way to reach
-          me is on LinkedIn.
+    <section id="contact" className="scroll-mt-20 pb-16">
+      <div className="rounded-2xl bg-dark px-6 py-12 text-center text-white">
+        <h2 className="text-2xl font-extrabold tracking-tight">
+          Let's build something<span className="text-tan">.</span>
+        </h2>
+        <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-white/70">
+          I'm open to web and mobile developer roles. I'd love to hear from you.
         </p>
-        <div className="actions">
-          {profile.email && (
-            <a className="button primary" href={`mailto:${profile.email}`}>
-              Email me
-            </a>
-          )}
-          <a
-            className={profile.email ? "button" : "button primary"}
-            href={profile.linkedin}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Message on LinkedIn
-          </a>
-          <a className="button" href={profile.github} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </div>
+        <a
+          href={href}
+          {...external}
+          className="mt-6 inline-block rounded-full bg-mauve px-6 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90"
+        >
+          {profile.email ? "Say hello" : "Message me on LinkedIn"}
+        </a>
       </div>
     </section>
   );

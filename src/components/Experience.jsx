@@ -1,11 +1,12 @@
 import { experience } from "../data";
 import ExperienceItem from "./ExperienceItem";
+import SectionHeading from "./SectionHeading";
 
 function Experience() {
   return (
-    <section id="experience" className="section container">
-      <h2>Work experience</h2>
-      <div className="experience-list">
+    <section id="experience" className="scroll-mt-20 pb-20">
+      <SectionHeading>Experience</SectionHeading>
+      <ol className="space-y-10 border-l border-line pl-6">
         {experience.map((job) => (
           <ExperienceItem
             key={job.id}
@@ -17,7 +18,7 @@ function Experience() {
             highlights={job.highlights}
           />
         ))}
-      </div>
+      </ol>
     </section>
   );
 }
