@@ -68,11 +68,12 @@ export const experience = [
     role: "Web Developer",
     company: "Majorel (now Teleperformance)",
     type: "Full-time",
-    period: "2022 – 2024",
+    period: "Jan 2022 – Sep 2024",
     highlights: [
-      "Built React dashboards giving team leads and managers visibility into moderator performance and quality metrics for a trust and safety operation supporting a major social video platform.",
-      "Developed interactive HR training modules for staff onboarding.",
-      "Developed marketing campaign assets for global consumer and technology brands: landing pages, promotional microsites, sign-up forms, offer cards, sale emails, and newsletters.",
+      "Built the frontend of an internal operations platform for project, HR, finance and campaign teams: a React, Vite, Tailwind CSS and HeroUI single-page app with 250+ pages and 100+ reusable components.",
+      "Developed reporting dashboards for time tracking, utilization, profitability and PTO with ApexCharts, virtualized tables and one-click Excel/PDF export, cutting manual report preparation by 60%.",
+      "Created 30+ in-app tools for email, content and engineering teams, including HTML/CSS validators, a code editor, email-to-image rendering and AI proofreading, cutting campaign QA time by 40%.",
+      "Implemented role-based route and component guards, dark mode and WCAG AA-aligned UI, plus an external app for encrypted client file shares, backed by 85 unit-test files.",
     ],
   },
 ];
