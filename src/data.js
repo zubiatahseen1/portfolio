@@ -100,7 +100,7 @@ export const projects = [
     description:
       "A wardrobe manager and outfit planner for iPhone. Catalogue your clothes, put together outfits, and plan what to wear, with everything stored on the device.",
     tags: ["Swift", "SwiftUI", "SwiftData"],
-    repo: "",
+    repo: "https://github.com/zubiatahseen1/vestiaire",
     demo: "",
     image: "",
   },
