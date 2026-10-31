@@ -2,7 +2,7 @@ const iconBase = "/icons";
 
 export const profile = {
   name: "Zubia Tahseen",
-  title: "Web & Mobile Developer",
+  title: "Frontend Developer",
   location: "Toronto, Canada",
   status: "Open to work",
   linkedin: "https://www.linkedin.com/in/zubia-tahseen",
@@ -10,16 +10,56 @@ export const profile = {
   email: "tahseenzubia4@gmail.com",
 };
 
+// Grouped to match the resume. Leave out `icon` for a text-only pill.
 export const techStack = [
-  { name: "JavaScript", icon: `${iconBase}/javascript-original.svg` },
-  { name: "React", icon: `${iconBase}/react-original.svg` },
-  { name: "HTML", icon: `${iconBase}/html5-original.svg` },
-  { name: "CSS", icon: `${iconBase}/css3-original.svg` },
-  { name: "Tailwind", icon: `${iconBase}/tailwindcss-original.svg` },
-  { name: "Swift", icon: `${iconBase}/swift-original.svg` },
-  { name: "Kotlin", icon: `${iconBase}/kotlin-original.svg` },
-  { name: "Git", icon: `${iconBase}/git-original.svg` },
-  { name: "Figma", icon: `${iconBase}/figma-original.svg` },
+  {
+    group: "Frontend",
+    items: [
+      { name: "JavaScript", icon: `${iconBase}/javascript-original.svg` },
+      { name: "TypeScript", icon: `${iconBase}/typescript-original.svg` },
+      { name: "React", icon: `${iconBase}/react-original.svg` },
+      { name: "Next.js", icon: `${iconBase}/nextjs-original.svg` },
+      { name: "Vite", icon: `${iconBase}/vitejs-original.svg` },
+      { name: "HTML", icon: `${iconBase}/html5-original.svg` },
+      { name: "CSS", icon: `${iconBase}/css3-original.svg` },
+      { name: "Tailwind CSS", icon: `${iconBase}/tailwindcss-original.svg` },
+      { name: "shadcn/ui" },
+      { name: "HeroUI" },
+    ],
+  },
+  {
+    group: "Data & Backend",
+    items: [
+      { name: "GraphQL", icon: `${iconBase}/graphql-plain.svg` },
+      { name: "REST APIs" },
+      { name: "TanStack Query" },
+      { name: "Zod" },
+      { name: "PostgreSQL", icon: `${iconBase}/postgresql-original.svg` },
+      { name: "Supabase", icon: `${iconBase}/supabase-original.svg` },
+      { name: "PHP", icon: `${iconBase}/php-original.svg` },
+      { name: "MySQL", icon: `${iconBase}/mysql-original.svg` },
+    ],
+  },
+  {
+    group: "Testing & Tools",
+    items: [
+      { name: "Vitest", icon: `${iconBase}/vitest-original.svg` },
+      { name: "Playwright", icon: `${iconBase}/playwright-original.svg` },
+      { name: "BrowserStack", icon: `${iconBase}/browserstack-original.svg` },
+      { name: "Git", icon: `${iconBase}/git-original.svg` },
+      { name: "GitHub Actions", icon: `${iconBase}/githubactions-original.svg` },
+      { name: "AWS", icon: `${iconBase}/aws-plain.svg` },
+    ],
+  },
+  {
+    group: "Design & Mobile",
+    items: [
+      { name: "Figma", icon: `${iconBase}/figma-original.svg` },
+      { name: "Photoshop", icon: `${iconBase}/photoshop-original.svg` },
+      { name: "Illustrator", icon: `${iconBase}/illustrator-original.svg` },
+      { name: "Swift / SwiftUI", icon: `${iconBase}/swift-original.svg` },
+    ],
+  },
 ];
 
 export const experience = [
@@ -45,10 +85,11 @@ export const projects = [
     name: "Mood Swings",
     platform: "Web",
     description:
-      "Pick how you want to feel tonight and get 12 matching movies, with filters by runtime and one-click reroll.",
-    tags: ["JavaScript", "HTML", "CSS", "TMDB API"],
+      "A mood-based movie finder, rebuilt from a framework-free JavaScript v1 into a full-stack Next.js app. Accounts, a watchlist and recommendations that adapt to each user's picks, with server-side caching, Row Level Security and CI running unit and end-to-end tests on every push.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "TanStack Query", "PostgreSQL", "Playwright"],
     repo: "https://github.com/zubiatahseen1/mood-swings",
-    demo: "https://zubiatahseen1.github.io/mood-swings/",
+    // Add the Vercel URL once it's deployed.
+    demo: "",
     image: "",
   },
   {
@@ -56,20 +97,9 @@ export const projects = [
     name: "Vestiaire",
     platform: "iOS",
     description:
-      "A wardrobe manager and outfit planner for iPhone. Catalogue your clothes, put together outfits, and plan what to wear.",
+      "A wardrobe manager and outfit planner for iPhone. Catalogue your clothes, put together outfits, and plan what to wear, with everything stored on the device.",
     tags: ["Swift", "SwiftUI", "SwiftData"],
     repo: "",
-    demo: "",
-    image: "",
-  },
-  {
-    id: "superpodcast",
-    name: "SuperPodcast",
-    platform: "Android",
-    description:
-      "An Android podcast player that searches the iTunes catalogue, lets you subscribe to shows, and plays episodes.",
-    tags: ["Kotlin", "Retrofit", "Glide", "RecyclerView"],
-    repo: "https://github.com/zubiatahseen1/AndroidApp4",
     demo: "",
     image: "",
   },
