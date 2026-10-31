@@ -7,8 +7,7 @@ export const profile = {
   status: "Open to work",
   linkedin: "https://www.linkedin.com/in/zubia-tahseen",
   github: "https://github.com/zubiatahseen1",
-  // Add your email to show an "Email me" button in Contact. Leave "" to hide it.
-  email: "",
+  email: "tahseenzubia4@gmail.com",
 };
 
 export const techStack = [
