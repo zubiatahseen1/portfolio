@@ -1,4 +1,5 @@
-function ExperienceItem({ role, company, type, period, description, highlights }) {
+function ExperienceItem({ role, company, location, type, period, description, highlights }) {
+  const meta = [company, location, type].filter(Boolean).join(" · ");
   return (
     <li className="relative">
       <span
@@ -7,9 +8,7 @@ function ExperienceItem({ role, company, type, period, description, highlights }
       ></span>
       <p className="text-xs font-semibold tracking-wide text-muted">{period}</p>
       <h3 className="mt-1 text-lg font-bold text-white">{role}</h3>
-      <p className="text-sm text-muted">
-        {company} · {type}
-      </p>
+      <p className="text-sm text-muted">{meta}</p>
       {description && (
         <p className="mt-4 text-sm leading-relaxed text-muted">{description}</p>
       )}

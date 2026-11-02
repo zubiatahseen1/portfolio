@@ -8,7 +8,7 @@ function Contact() {
           Let's build something<span className="text-muted">.</span>
         </h2>
         <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-white/70">
-          I'm open to web and mobile developer roles. I'd love to hear from you.
+          I'm open to frontend and full-stack developer roles. I'd love to hear from you.
         </p>
 
         <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">

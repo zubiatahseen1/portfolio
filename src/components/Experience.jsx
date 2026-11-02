@@ -12,6 +12,7 @@ function Experience() {
             key={job.id}
             role={job.role}
             company={job.company}
+            location={job.location}
             type={job.type}
             period={job.period}
             description={job.description}

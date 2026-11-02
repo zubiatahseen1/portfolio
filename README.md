@@ -1,8 +1,8 @@
 # Zubia Tahseen — Portfolio
 
-Personal portfolio site for Zubia Tahseen, Web & Mobile Developer.
+Personal portfolio site for Zubia Tahseen, Frontend Developer.
 
-Built with **React** and **Vite**. Sections: Hero, Tech stack, Work experience, Projects, Contact.
+Built with **React** and **Vite**. Sections: Hero, Tech stack, Experience, Projects, Education, Contact.
 
 ## Run locally
 
@@ -21,5 +21,5 @@ The production build is written to `dist/`.
 
 ## Editing content
 
-All text content (profile links, tech stack, experience, projects) lives in `src/data.js`.
+All text content (profile, summary, tech stack, experience, projects, education) lives in `src/data.js`.
 To add a project, add an object to the `projects` array.

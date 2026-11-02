@@ -13,6 +13,7 @@ function Hero() {
           <p className="mt-3 text-lg font-medium text-white/85">
             {profile.title} based in {profile.location}.
           </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted">{profile.summary}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
               href="#contact"
