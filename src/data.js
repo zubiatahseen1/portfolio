@@ -81,7 +81,10 @@ export const techStack = [
     items: [
       { name: "Git", icon: `${iconBase}/git-original.svg` },
       { name: "GitHub" },
-      { name: "GitHub Actions", icon: `${iconBase}/githubactions-original.svg` },
+      {
+        name: "GitHub Actions",
+        icon: `${iconBase}/githubactions-original.svg`,
+      },
       { name: "AWS", icon: `${iconBase}/aws-plain.svg` },
       { name: "Node.js / npm" },
       { name: "VS Code" },
@@ -119,7 +122,7 @@ export const experience = [
   },
   {
     id: "amazon",
-    role: "Jr. Web Developer",
+    role: "Front-End Engineer I",
     company: "Amazon",
     location: "Hyderabad, India",
     period: "Apr 2018 – Jul 2020",
@@ -151,7 +154,14 @@ export const projects = [
     platform: "Web",
     description:
       "A mood-based movie finder, rebuilt from a framework-free JavaScript v1 into a full-stack Next.js app. Accounts, a watchlist and recommendations that adapt to each user's picks. Movie API calls run behind cached server-side routes, user data is protected with Row Level Security and Zod validation, and CI runs 19 unit and 18 end-to-end tests on every push.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "TanStack Query", "PostgreSQL", "Playwright"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "PostgreSQL",
+      "Playwright",
+    ],
     repo: "https://github.com/zubiatahseen1/mood-swings",
     // Add the Vercel URL once it's deployed.
     demo: "",
