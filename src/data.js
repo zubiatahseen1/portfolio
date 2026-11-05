@@ -151,7 +151,7 @@ export const projects = [
   {
     id: "mood-swings",
     name: "Mood Swings",
-    platform: "Web",
+    platform: "https://moodswingsmovies.vercel.app/",
     description:
       "A mood-based movie finder, rebuilt from a framework-free JavaScript v1 into a full-stack Next.js app. Accounts, a watchlist and recommendations that adapt to each user's picks. Movie API calls run behind cached server-side routes, user data is protected with Row Level Security and Zod validation, and CI runs 19 unit and 18 end-to-end tests on every push.",
     tags: [
@@ -164,7 +164,7 @@ export const projects = [
     ],
     repo: "https://github.com/zubiatahseen1/mood-swings",
     // Add the Vercel URL once it's deployed.
-    demo: "",
+    demo: "https://moodswingsmovies.vercel.app/",
     image: "",
   },
   {
